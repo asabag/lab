@@ -1,0 +1,28 @@
+{
+  "name": "{{project-name | kebab_case}}",
+  "version": "1.0.0",
+  "description": "{{project-description}}",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:debug": "node build.mjs --debug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mkdirp": "^3.0.1",
+    "esbuild": "^0.25.8",
+    "@bytecodealliance/jco": "^1.17.6"
+  },
+  "dependencies": {
+    {%- case http-router -%}
+    {% when "hono" %}
+    "hono": "^4.7.4",
+    {% when "itty" %}
+    "itty-router": "^5.0.18",
+    {%- endcase %}
+    "@spinframework/wasi-http-proxy": "^2.0.0"
+  }
+}

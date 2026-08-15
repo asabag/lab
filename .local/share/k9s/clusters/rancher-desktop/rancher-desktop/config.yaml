@@ -1,0 +1,13 @@
+k9s:
+  cluster: rancher-desktop
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - default
+  view:
+    active: v1/pods default
+  featureGates:
+    nodeShell: false
+  proxy: null
