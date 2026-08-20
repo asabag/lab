@@ -10,17 +10,24 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~MSle0~/strat
+
 # Command Line History (newest to oldest):
+:q!
+|2,0,1787112292,,"q!"
 :wq!
-|2,0,1786766056,,"wq!"
+|2,0,1787111515,,"wq!"
+:q
+|2,0,1787111469,,"q"
+:set paste
+|2,0,1786766654,,"set paste"
 :wq
 |2,0,1786759858,,"wq"
-:q!
-|2,0,1786758575,,"q!"
-:q
-|2,0,1786677529,,"q"
 
 # Search String History (newest to oldest):
+?/strat
+|2,1,1787111430,47,"strat"
 
 # Expression History (newest to oldest):
 
@@ -33,243 +40,313 @@
 	# ~/.bashrc: executed by bash(1) for non-login shells.
 |3,0,0,1,1,0,1786598208,"# ~/.bashrc: executed by bash(1) for non-login shells."
 ""1	LINE	0
-	status: {}
-|3,1,1,1,1,0,1786759392,"status: {}"
+	    rollingUpdate:
+	      maxUnavailable: 1
+	      maxSurge: 1
+	
+	
+|3,1,1,1,5,0,1787111308,"    rollingUpdate:","      maxUnavailable: 1","      maxSurge: 1","",""
 "2	LINE	0
-	  restartPolicy: Always
-|3,0,2,1,1,0,1786759379,"  restartPolicy: Always"
+	status: {}
+|3,0,2,1,1,0,1787107089,"status: {}"
 "3	LINE	0
-	  dnsPolicy: ClusterFirst
-|3,0,3,1,1,0,1786759375,"  dnsPolicy: ClusterFirst"
+	        resources: {}
+|3,0,3,1,1,0,1787107087,"        resources: {}"
 "4	LINE	0
+	  strategy: {}
+|3,0,4,1,1,0,1787107071,"  strategy: {}"
+"5	LINE	0
+	status: {}
+|3,0,5,1,1,0,1786759392,"status: {}"
+"6	LINE	0
+	  restartPolicy: Always
+|3,0,6,1,1,0,1786759379,"  restartPolicy: Always"
+"7	LINE	0
+	  dnsPolicy: ClusterFirst
+|3,0,7,1,1,0,1786759375,"  dnsPolicy: ClusterFirst"
+"8	LINE	0
 	    resources: {}
-|3,0,4,1,1,0,1786759371,"    resources: {}"
+|3,0,8,1,1,0,1786759371,"    resources: {}"
+"-	CHAR	0
+	8
+|3,0,36,0,1,0,1787110661,"8"
 
 # File marks:
-'0  3  0  ~/test2.yaml
-|4,48,3,0,1786766056,"~/test2.yaml"
-'1  2  23  ~/test.yaml
-|4,49,2,23,1786765995,"~/test.yaml"
-'2  7  17  ~/nginx.yaml
-|4,50,7,17,1786759858,"~/nginx.yaml"
-'3  12  4  ~/nginx.yaml
-|4,51,12,4,1786759446,"~/nginx.yaml"
-'4  11  4  ~/nginx.yaml
-|4,52,11,4,1786759446,"~/nginx.yaml"
-'5  87  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,53,87,0,1786758575,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
-'6  3  0  ~/.kube/config
-|4,54,3,0,1786677529,"~/.kube/config"
-'7  28  0  ~/.bashrc
-|4,55,28,0,1786598305,"~/.bashrc"
-'8  1  0  ~/.bashrc
-|4,56,1,0,1786598243,"~/.bashrc"
-'9  1  0  ~/.bashrc
-|4,57,1,0,1786598243,"~/.bashrc"
+'0  18  8  ~/deploy.yaml
+|4,48,18,8,1787112292,"~/deploy.yaml"
+'1  18  32  ~/deploy-recreate.yaml
+|4,49,18,32,1787111515,"~/deploy-recreate.yaml"
+'2  65  2  /tmp/kubectl1.36.3-edit-2016863367.yaml
+|4,50,65,2,1787111469,"/tmp/kubectl1.36.3-edit-2016863367.yaml"
+'3  21  17  ~/deploy-recreate.yaml
+|4,51,21,17,1787111357,"~/deploy-recreate.yaml"
+'4  21  17  ~/deploy-recreate.yaml
+|4,52,21,17,1787111357,"~/deploy-recreate.yaml"
+'5  18  32  ~/deploy.yaml
+|4,53,18,32,1787110673,"~/deploy.yaml"
+'6  25  0  ~/deploy.yaml
+|4,54,25,0,1787110396,"~/deploy.yaml"
+'7  25  0  ~/deploy.yaml
+|4,55,25,0,1787110396,"~/deploy.yaml"
+'8  25  0  ~/deploy.yaml
+|4,56,25,0,1787110396,"~/deploy.yaml"
+'9  25  0  ~/deploy.yaml
+|4,57,25,0,1787110396,"~/deploy.yaml"
 
 # Jumplist (newest first):
--'  3  0  ~/test2.yaml
-|4,39,3,0,1786766056,"~/test2.yaml"
--'  1  0  ~/test2.yaml
-|4,39,1,0,1786766020,"~/test2.yaml"
--'  2  23  ~/test.yaml
-|4,39,2,23,1786765995,"~/test.yaml"
--'  2  23  ~/test.yaml
-|4,39,2,23,1786765995,"~/test.yaml"
--'  1  0  ~/test.yaml
-|4,39,1,0,1786765966,"~/test.yaml"
--'  1  0  ~/test.yaml
-|4,39,1,0,1786765966,"~/test.yaml"
--'  7  17  ~/nginx.yaml
-|4,39,7,17,1786759858,"~/nginx.yaml"
--'  7  17  ~/nginx.yaml
-|4,39,7,17,1786759858,"~/nginx.yaml"
--'  7  17  ~/nginx.yaml
-|4,39,7,17,1786759858,"~/nginx.yaml"
--'  7  17  ~/nginx.yaml
-|4,39,7,17,1786759858,"~/nginx.yaml"
--'  1  0  ~/nginx.yaml
-|4,39,1,0,1786759735,"~/nginx.yaml"
--'  1  0  ~/nginx.yaml
-|4,39,1,0,1786759735,"~/nginx.yaml"
--'  1  0  ~/nginx.yaml
-|4,39,1,0,1786759735,"~/nginx.yaml"
--'  1  0  ~/nginx.yaml
-|4,39,1,0,1786759735,"~/nginx.yaml"
--'  12  4  ~/nginx.yaml
-|4,39,12,4,1786759446,"~/nginx.yaml"
--'  11  4  ~/nginx.yaml
-|4,39,11,4,1786759446,"~/nginx.yaml"
--'  12  4  ~/nginx.yaml
-|4,39,12,4,1786759446,"~/nginx.yaml"
--'  11  4  ~/nginx.yaml
-|4,39,11,4,1786759446,"~/nginx.yaml"
--'  12  4  ~/nginx.yaml
-|4,39,12,4,1786759446,"~/nginx.yaml"
--'  11  4  ~/nginx.yaml
-|4,39,11,4,1786759446,"~/nginx.yaml"
--'  12  4  ~/nginx.yaml
-|4,39,12,4,1786759446,"~/nginx.yaml"
--'  11  4  ~/nginx.yaml
-|4,39,11,4,1786759446,"~/nginx.yaml"
--'  1  0  ~/nginx.yaml
-|4,39,1,0,1786759240,"~/nginx.yaml"
--'  1  0  ~/nginx.yaml
-|4,39,1,0,1786759240,"~/nginx.yaml"
--'  1  0  ~/nginx.yaml
-|4,39,1,0,1786759240,"~/nginx.yaml"
--'  1  0  ~/nginx.yaml
-|4,39,1,0,1786759240,"~/nginx.yaml"
--'  87  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,87,0,1786758575,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  87  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,87,0,1786758575,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  87  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,87,0,1786758575,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  87  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,87,0,1786758575,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  87  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,87,0,1786758575,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  87  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,87,0,1786758575,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  87  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,87,0,1786758575,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  87  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,87,0,1786758575,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  87  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,87,0,1786758575,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  87  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,87,0,1786758575,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  87  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,87,0,1786758575,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  87  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,87,0,1786758575,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  87  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,87,0,1786758575,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  87  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,87,0,1786758575,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  87  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,87,0,1786758575,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  87  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,87,0,1786758575,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  1  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,1,0,1786758383,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  1  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,1,0,1786758383,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  1  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,1,0,1786758383,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  1  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,1,0,1786758383,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  1  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,1,0,1786758383,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  1  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,1,0,1786758383,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  1  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,1,0,1786758383,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  1  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,1,0,1786758383,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  1  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,1,0,1786758383,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  1  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,1,0,1786758383,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  1  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,1,0,1786758383,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  1  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,1,0,1786758383,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  1  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,1,0,1786758383,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  1  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,1,0,1786758383,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  1  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,1,0,1786758383,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  1  0  /tmp/kubectl1.36.3-edit-1829195832.yaml
-|4,39,1,0,1786758383,"/tmp/kubectl1.36.3-edit-1829195832.yaml"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  3  0  ~/.kube/config
-|4,39,3,0,1786677529,"~/.kube/config"
--'  1  0  ~/.kube/config
-|4,39,1,0,1786677445,"~/.kube/config"
--'  1  0  ~/.kube/config
-|4,39,1,0,1786677445,"~/.kube/config"
--'  1  0  ~/.kube/config
-|4,39,1,0,1786677445,"~/.kube/config"
--'  1  0  ~/.kube/config
-|4,39,1,0,1786677445,"~/.kube/config"
--'  1  0  ~/.kube/config
-|4,39,1,0,1786677445,"~/.kube/config"
--'  1  0  ~/.kube/config
-|4,39,1,0,1786677445,"~/.kube/config"
--'  1  0  ~/.kube/config
-|4,39,1,0,1786677445,"~/.kube/config"
--'  1  0  ~/.kube/config
-|4,39,1,0,1786677445,"~/.kube/config"
--'  1  0  ~/.kube/config
-|4,39,1,0,1786677445,"~/.kube/config"
--'  1  0  ~/.kube/config
-|4,39,1,0,1786677445,"~/.kube/config"
+-'  18  8  ~/deploy.yaml
+|4,39,18,8,1787112292,"~/deploy.yaml"
+-'  1  0  ~/deploy.yaml
+|4,39,1,0,1787111797,"~/deploy.yaml"
+-'  18  32  ~/deploy-recreate.yaml
+|4,39,18,32,1787111515,"~/deploy-recreate.yaml"
+-'  18  32  ~/deploy-recreate.yaml
+|4,39,18,32,1787111515,"~/deploy-recreate.yaml"
+-'  1  0  ~/deploy-recreate.yaml
+|4,39,1,0,1787111478,"~/deploy-recreate.yaml"
+-'  1  0  ~/deploy-recreate.yaml
+|4,39,1,0,1787111478,"~/deploy-recreate.yaml"
+-'  65  2  /tmp/kubectl1.36.3-edit-2016863367.yaml
+|4,39,65,2,1787111469,"/tmp/kubectl1.36.3-edit-2016863367.yaml"
+-'  65  2  /tmp/kubectl1.36.3-edit-2016863367.yaml
+|4,39,65,2,1787111469,"/tmp/kubectl1.36.3-edit-2016863367.yaml"
+-'  65  2  /tmp/kubectl1.36.3-edit-2016863367.yaml
+|4,39,65,2,1787111469,"/tmp/kubectl1.36.3-edit-2016863367.yaml"
+-'  65  2  /tmp/kubectl1.36.3-edit-2016863367.yaml
+|4,39,65,2,1787111469,"/tmp/kubectl1.36.3-edit-2016863367.yaml"
+-'  11  205  /tmp/kubectl1.36.3-edit-2016863367.yaml
+|4,39,11,205,1787111437,"/tmp/kubectl1.36.3-edit-2016863367.yaml"
+-'  11  205  /tmp/kubectl1.36.3-edit-2016863367.yaml
+|4,39,11,205,1787111437,"/tmp/kubectl1.36.3-edit-2016863367.yaml"
+-'  11  205  /tmp/kubectl1.36.3-edit-2016863367.yaml
+|4,39,11,205,1787111437,"/tmp/kubectl1.36.3-edit-2016863367.yaml"
+-'  11  205  /tmp/kubectl1.36.3-edit-2016863367.yaml
+|4,39,11,205,1787111437,"/tmp/kubectl1.36.3-edit-2016863367.yaml"
+-'  58  0  /tmp/kubectl1.36.3-edit-2016863367.yaml
+|4,39,58,0,1787111430,"/tmp/kubectl1.36.3-edit-2016863367.yaml"
+-'  58  0  /tmp/kubectl1.36.3-edit-2016863367.yaml
+|4,39,58,0,1787111430,"/tmp/kubectl1.36.3-edit-2016863367.yaml"
+-'  58  0  /tmp/kubectl1.36.3-edit-2016863367.yaml
+|4,39,58,0,1787111430,"/tmp/kubectl1.36.3-edit-2016863367.yaml"
+-'  58  0  /tmp/kubectl1.36.3-edit-2016863367.yaml
+|4,39,58,0,1787111430,"/tmp/kubectl1.36.3-edit-2016863367.yaml"
+-'  1  0  /tmp/kubectl1.36.3-edit-2016863367.yaml
+|4,39,1,0,1787111413,"/tmp/kubectl1.36.3-edit-2016863367.yaml"
+-'  1  0  /tmp/kubectl1.36.3-edit-2016863367.yaml
+|4,39,1,0,1787111413,"/tmp/kubectl1.36.3-edit-2016863367.yaml"
+-'  1  0  /tmp/kubectl1.36.3-edit-2016863367.yaml
+|4,39,1,0,1787111413,"/tmp/kubectl1.36.3-edit-2016863367.yaml"
+-'  1  0  /tmp/kubectl1.36.3-edit-2016863367.yaml
+|4,39,1,0,1787111413,"/tmp/kubectl1.36.3-edit-2016863367.yaml"
+-'  21  17  ~/deploy-recreate.yaml
+|4,39,21,17,1787111357,"~/deploy-recreate.yaml"
+-'  21  17  ~/deploy-recreate.yaml
+|4,39,21,17,1787111357,"~/deploy-recreate.yaml"
+-'  21  17  ~/deploy-recreate.yaml
+|4,39,21,17,1787111357,"~/deploy-recreate.yaml"
+-'  21  17  ~/deploy-recreate.yaml
+|4,39,21,17,1787111357,"~/deploy-recreate.yaml"
+-'  21  17  ~/deploy-recreate.yaml
+|4,39,21,17,1787111357,"~/deploy-recreate.yaml"
+-'  21  17  ~/deploy-recreate.yaml
+|4,39,21,17,1787111357,"~/deploy-recreate.yaml"
+-'  22  0  ~/deploy-recreate.yaml
+|4,39,22,0,1787111308,"~/deploy-recreate.yaml"
+-'  22  0  ~/deploy-recreate.yaml
+|4,39,22,0,1787111308,"~/deploy-recreate.yaml"
+-'  22  0  ~/deploy-recreate.yaml
+|4,39,22,0,1787111308,"~/deploy-recreate.yaml"
+-'  22  0  ~/deploy-recreate.yaml
+|4,39,22,0,1787111308,"~/deploy-recreate.yaml"
+-'  22  0  ~/deploy-recreate.yaml
+|4,39,22,0,1787111308,"~/deploy-recreate.yaml"
+-'  22  0  ~/deploy-recreate.yaml
+|4,39,22,0,1787111308,"~/deploy-recreate.yaml"
+-'  1  0  ~/deploy-recreate.yaml
+|4,39,1,0,1787111278,"~/deploy-recreate.yaml"
+-'  1  0  ~/deploy-recreate.yaml
+|4,39,1,0,1787111278,"~/deploy-recreate.yaml"
+-'  1  0  ~/deploy-recreate.yaml
+|4,39,1,0,1787111278,"~/deploy-recreate.yaml"
+-'  1  0  ~/deploy-recreate.yaml
+|4,39,1,0,1787111278,"~/deploy-recreate.yaml"
+-'  18  32  ~/deploy.yaml
+|4,39,18,32,1787110673,"~/deploy.yaml"
+-'  18  32  ~/deploy.yaml
+|4,39,18,32,1787110673,"~/deploy.yaml"
+-'  18  32  ~/deploy.yaml
+|4,39,18,32,1787110673,"~/deploy.yaml"
+-'  18  32  ~/deploy.yaml
+|4,39,18,32,1787110673,"~/deploy.yaml"
+-'  18  32  ~/deploy.yaml
+|4,39,18,32,1787110673,"~/deploy.yaml"
+-'  18  32  ~/deploy.yaml
+|4,39,18,32,1787110673,"~/deploy.yaml"
+-'  18  32  ~/deploy.yaml
+|4,39,18,32,1787110673,"~/deploy.yaml"
+-'  18  32  ~/deploy.yaml
+|4,39,18,32,1787110673,"~/deploy.yaml"
+-'  1  0  ~/deploy.yaml
+|4,39,1,0,1787110654,"~/deploy.yaml"
+-'  1  0  ~/deploy.yaml
+|4,39,1,0,1787110654,"~/deploy.yaml"
+-'  1  0  ~/deploy.yaml
+|4,39,1,0,1787110654,"~/deploy.yaml"
+-'  1  0  ~/deploy.yaml
+|4,39,1,0,1787110654,"~/deploy.yaml"
+-'  1  0  ~/deploy.yaml
+|4,39,1,0,1787110654,"~/deploy.yaml"
+-'  1  0  ~/deploy.yaml
+|4,39,1,0,1787110654,"~/deploy.yaml"
+-'  1  0  ~/deploy.yaml
+|4,39,1,0,1787110654,"~/deploy.yaml"
+-'  1  0  ~/deploy.yaml
+|4,39,1,0,1787110654,"~/deploy.yaml"
+-'  25  0  ~/deploy.yaml
+|4,39,25,0,1787110396,"~/deploy.yaml"
+-'  25  0  ~/deploy.yaml
+|4,39,25,0,1787110396,"~/deploy.yaml"
+-'  25  0  ~/deploy.yaml
+|4,39,25,0,1787110396,"~/deploy.yaml"
+-'  25  0  ~/deploy.yaml
+|4,39,25,0,1787110396,"~/deploy.yaml"
+-'  25  0  ~/deploy.yaml
+|4,39,25,0,1787110396,"~/deploy.yaml"
+-'  25  0  ~/deploy.yaml
+|4,39,25,0,1787110396,"~/deploy.yaml"
+-'  25  0  ~/deploy.yaml
+|4,39,25,0,1787110396,"~/deploy.yaml"
+-'  25  0  ~/deploy.yaml
+|4,39,25,0,1787110396,"~/deploy.yaml"
+-'  25  0  ~/deploy.yaml
+|4,39,25,0,1787110396,"~/deploy.yaml"
+-'  25  0  ~/deploy.yaml
+|4,39,25,0,1787110396,"~/deploy.yaml"
+-'  25  0  ~/deploy.yaml
+|4,39,25,0,1787110396,"~/deploy.yaml"
+-'  25  0  ~/deploy.yaml
+|4,39,25,0,1787110396,"~/deploy.yaml"
+-'  25  0  ~/deploy.yaml
+|4,39,25,0,1787110396,"~/deploy.yaml"
+-'  25  0  ~/deploy.yaml
+|4,39,25,0,1787110396,"~/deploy.yaml"
+-'  25  0  ~/deploy.yaml
+|4,39,25,0,1787110396,"~/deploy.yaml"
+-'  25  0  ~/deploy.yaml
+|4,39,25,0,1787110396,"~/deploy.yaml"
+-'  25  0  ~/deploy.yaml
+|4,39,25,0,1787110396,"~/deploy.yaml"
+-'  1  0  ~/deploy.yaml
+|4,39,1,0,1787110207,"~/deploy.yaml"
+-'  1  0  ~/deploy.yaml
+|4,39,1,0,1787110207,"~/deploy.yaml"
+-'  1  0  ~/deploy.yaml
+|4,39,1,0,1787110207,"~/deploy.yaml"
+-'  1  0  ~/deploy.yaml
+|4,39,1,0,1787110207,"~/deploy.yaml"
+-'  1  0  ~/deploy.yaml
+|4,39,1,0,1787110207,"~/deploy.yaml"
+-'  1  0  ~/deploy.yaml
+|4,39,1,0,1787110207,"~/deploy.yaml"
+-'  1  0  ~/deploy.yaml
+|4,39,1,0,1787110207,"~/deploy.yaml"
+-'  1  0  ~/deploy.yaml
+|4,39,1,0,1787110207,"~/deploy.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
+-'  1  0  ~/deply.yaml
+|4,39,1,0,1787110196,"~/deply.yaml"
 
 # History of marks within files (newest to oldest):
+
+> ~/deploy.yaml
+	*	1787112287	0
+	"	18	8
+	^	18	33
+	.	18	32
+	+	12	0
+	+	27	0
+	+	18	32
+	+	19	21
+	+	26	0
+	+	20	12
+	+	21	23
+	+	22	18
+	+	24	17
+	+	25	0
+	+	18	32
+
+> ~/deploy-recreate.yaml
+	*	1787111511	0
+	"	18	32
+	^	18	33
+	.	18	33
+	+	22	0
+	+	21	18
+	+	18	33
+
+> /tmp/kubectl1.36.3-edit-2016863367.yaml
+	*	1787111467	0
+	"	65	2
+
+> ~/deply.yaml
+	*	1787110192	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> /tmp/kubectl1.36.3-edit-1896206967.yaml
+	*	1787105716	0
+	"	13	0
+
+> ~/nginx-docs.yaml
+	*	1786767031	0
+	"	6	15
+	^	6	16
+	.	7	0
+	+	12	23
+	+	6	16
+	+	5	9
+	+	7	0
 
 > ~/test2.yaml
 	*	1786766051	0
